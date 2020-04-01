@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Cinema.Model.RepositoryCore
 {
@@ -15,9 +16,9 @@ namespace Cinema.Model.RepositoryCore
         public IGenericRepository<Cinema.Model.Entity.Cinema> cinemaRepository 
             => new GenericRepository<Cinema.Model.Entity.Cinema>(cinemaDbContext);
 
-        public void CommitAsync()
+        public async Task CommitAsync()
         {
-            this.cinemaDbContext.SaveChangesAsync();
+            await this.cinemaDbContext.SaveChangesAsync();
         }
 
         private bool disposed = false;

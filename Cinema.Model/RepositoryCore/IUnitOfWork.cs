@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Cinema.Model.RepositoryCore
 {
@@ -10,7 +11,7 @@ namespace Cinema.Model.RepositoryCore
         /// <summary>
         /// Commit the changes to database
         /// </summary>
-        void CommitAsync();
+        Task CommitAsync();
 
     }
 }
