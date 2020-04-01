@@ -1,9 +1,0 @@
-D:\GraphQL.Net\Cinema\Cinema\Cinema.Model\bin\Debug\netcoreapp3.1\Cinema.Model.deps.json
-D:\GraphQL.Net\Cinema\Cinema\Cinema.Model\bin\Debug\netcoreapp3.1\Cinema.Model.dll
-D:\GraphQL.Net\Cinema\Cinema\Cinema.Model\obj\Debug\netcoreapp3.1\Cinema.Model.csprojAssemblyReference.cache
-D:\GraphQL.Net\Cinema\Cinema\Cinema.Model\obj\Debug\netcoreapp3.1\Cinema.Model.AssemblyInfoInputs.cache
-D:\GraphQL.Net\Cinema\Cinema\Cinema.Model\obj\Debug\netcoreapp3.1\Cinema.Model.AssemblyInfo.cs
-D:\GraphQL.Net\Cinema\Cinema\Cinema.Model\bin\Debug\netcoreapp3.1\Cinema.Model.pdb
-D:\GraphQL.Net\Cinema\Cinema\Cinema.Model\obj\Debug\netcoreapp3.1\Cinema.Model.csproj.CoreCompileInputs.cache
-D:\GraphQL.Net\Cinema\Cinema\Cinema.Model\obj\Debug\netcoreapp3.1\Cinema.Model.dll
-D:\GraphQL.Net\Cinema\Cinema\Cinema.Model\obj\Debug\netcoreapp3.1\Cinema.Model.pdb
