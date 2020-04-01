@@ -1,0 +1,12 @@
+D:\GraphQL.Net\Cinema\Cinema\Cinema.Logic\bin\Debug\netcoreapp3.1\Cinema.Logic.deps.json
+D:\GraphQL.Net\Cinema\Cinema\Cinema.Logic\bin\Debug\netcoreapp3.1\Cinema.Logic.dll
+D:\GraphQL.Net\Cinema\Cinema\Cinema.Logic\bin\Debug\netcoreapp3.1\Cinema.Logic.pdb
+D:\GraphQL.Net\Cinema\Cinema\Cinema.Logic\obj\Debug\netcoreapp3.1\Cinema.Logic.csprojAssemblyReference.cache
+D:\GraphQL.Net\Cinema\Cinema\Cinema.Logic\obj\Debug\netcoreapp3.1\Cinema.Logic.AssemblyInfoInputs.cache
+D:\GraphQL.Net\Cinema\Cinema\Cinema.Logic\obj\Debug\netcoreapp3.1\Cinema.Logic.AssemblyInfo.cs
+D:\GraphQL.Net\Cinema\Cinema\Cinema.Logic\obj\Debug\netcoreapp3.1\Cinema.Logic.dll
+D:\GraphQL.Net\Cinema\Cinema\Cinema.Logic\obj\Debug\netcoreapp3.1\Cinema.Logic.pdb
+D:\GraphQL.Net\Cinema\Cinema\Cinema.Logic\bin\Debug\netcoreapp3.1\Cinema.Model.dll
+D:\GraphQL.Net\Cinema\Cinema\Cinema.Logic\bin\Debug\netcoreapp3.1\Cinema.Model.pdb
+D:\GraphQL.Net\Cinema\Cinema\Cinema.Logic\obj\Debug\netcoreapp3.1\Cinema.Logic.csproj.CopyComplete
+D:\GraphQL.Net\Cinema\Cinema\Cinema.Logic\obj\Debug\netcoreapp3.1\Cinema.Logic.csproj.CoreCompileInputs.cache
