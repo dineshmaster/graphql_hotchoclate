@@ -1,4 +1,5 @@
-﻿using Cinema.Logic.Core.Abstract;
+﻿using AutoMapper;
+using Cinema.Logic.Core.Abstract;
 using Cinema.Logic.DTO;
 using Cinema.Model.RepositoryCore;
 using System;
@@ -11,9 +12,11 @@ namespace Cinema.Logic.Core.Concret
     public class CinemaLogic : ICinemaLogic
     {
         private readonly IUnitOfWork unitOfWork;
-        public CinemaLogic(IUnitOfWork unitOfWork)
+        private readonly IMapper mapper;
+        public CinemaLogic(IUnitOfWork unitOfWork,IMapper mapper)
         {
             this.unitOfWork = unitOfWork;
+            this.mapper = mapper;
         }
         public IQueryable<CinemaDTO> GetCinemas()
         {
@@ -21,17 +24,7 @@ namespace Cinema.Logic.Core.Concret
             var cinemas = unitOfWork.cinemaRepository.Get();
             if (cinemas != null)
             {
-                cinemaList = new List<CinemaDTO>();
-                foreach(var item in cinemas)
-                {
-                    cinemaList.Add(new CinemaDTO
-                    {
-                        Description = item.Description,
-                        Duration = item.Duration,
-                        ID = item.ID,
-                        Title = item.Title
-                    });
-                }
+                cinemaList = mapper.Map<List<CinemaDTO>>(cinemas);
             }
             return cinemaList.AsQueryable();
         }

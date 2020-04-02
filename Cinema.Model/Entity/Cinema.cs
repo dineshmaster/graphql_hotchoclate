@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Cinema.Model.Entity
 {
-    public class Cinema:IAggregateRoot
+    public class Cinema
     {
         [Key]
         public int ID { get; set; }
