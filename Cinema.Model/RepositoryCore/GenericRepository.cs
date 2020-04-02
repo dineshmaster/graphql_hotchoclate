@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Cinema.Model.RepositoryCore
 {
@@ -64,9 +65,9 @@ namespace Cinema.Model.RepositoryCore
             }
         }
 
-        public TEntity Get(object id)
+        public async Task<TEntity> GetAsync(object id)
         {
-            return dbSet.Find(id);
+            return await dbSet.FindAsync(id);
         }
 
         public void Update(TEntity entityToBeUpdated)

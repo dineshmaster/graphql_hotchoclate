@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Cinema.Model.RepositoryCore
 {
@@ -24,7 +25,7 @@ namespace Cinema.Model.RepositoryCore
         /// </summary>
         /// <param name="id">ID of the object to be retrieved</param>
         /// <returns></returns>
-        TEntity Get(object id);
+        Task<TEntity> GetAsync(object id);
         /// <summary>
         /// Add entity to the dbset
         /// </summary>
