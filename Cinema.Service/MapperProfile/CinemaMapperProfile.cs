@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Cinema.Logic.DTO;
+using Cinema.Service.Mutation;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -10,7 +11,8 @@ namespace Cinema.Service.MapperProfile
     {
         public CinemaMapperProfile()
         {
-            CreateMap<Cinema.Model.Entity.Cinema, CinemaDTO>();
+            CreateMap<Cinema.Model.Entity.Cinema, CinemaDTO>().ReverseMap();
+            CreateMap<CinemaInput, CinemaDTO>();
         }
     }
 }

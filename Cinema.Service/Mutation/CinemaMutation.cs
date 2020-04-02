@@ -1,4 +1,8 @@
-﻿using HotChocolate.Types;
+﻿using AutoMapper;
+using Cinema.Logic.Core.Abstract;
+using Cinema.Logic.DTO;
+using HotChocolate;
+using HotChocolate.Types;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,9 +14,13 @@ namespace Cinema.Service.Mutation
     [ExtendObjectType(Name = "Mutation")]
     public class CinemaMutation
     {
-        public Cinema.Model.Entity.Cinema CreateCinema(CinemaInput cinemaInput,CancellationToken cancellationtoken)
+        public async Task<CinemaDTO> CreateCinema(CinemaInput cinemaInput,
+            [Service]ICinemaLogic cinemaLogic,
+            [Service]IMapper mapper, CancellationToken cancellationtoken)
         {
-            return new Model.Entity.Cinema();
+            CinemaDTO inputCinema = mapper.Map<CinemaDTO>(cinemaInput);
+            CinemaDTO cinemaDTO = await cinemaLogic.SetCinema(inputCinema);
+            return cinemaDTO;
         }
     }
 }

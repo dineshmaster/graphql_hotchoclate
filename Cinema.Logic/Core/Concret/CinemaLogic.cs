@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Cinema.Logic.Core.Concret
 {
@@ -27,6 +28,14 @@ namespace Cinema.Logic.Core.Concret
                 cinemaList = mapper.Map<List<CinemaDTO>>(cinemas);
             }
             return cinemaList.AsQueryable();
+        }
+        public async Task<CinemaDTO> SetCinema(CinemaDTO cinema)
+        {
+            Cinema.Model.Entity.Cinema cinemaEntity = mapper.Map<Cinema.Model.Entity.Cinema>(cinema);
+            unitOfWork.cinemaRepository.Add(cinemaEntity);
+            await unitOfWork.CommitAsync();
+            cinema = mapper.Map<CinemaDTO>(cinemaEntity);
+            return cinema;
         }
     }
 }
