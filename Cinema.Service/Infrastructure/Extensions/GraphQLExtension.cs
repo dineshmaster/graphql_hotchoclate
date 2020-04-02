@@ -1,4 +1,5 @@
-﻿using Cinema.Service.Query;
+﻿using Cinema.Service.Mutation;
+using Cinema.Service.Query;
 using HotChocolate;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -16,7 +17,11 @@ namespace Cinema.Service.Infrastructure.Extensions
               .AddQueryType(p => p.Name("Query"))
               .AddType<CinemaQuery>()
               .AddType<HelloQuery>()
-              .Create());
+              .AddMutationType(p => p.Name("Mutation"))
+              .AddType<CinemaMutation>()
+              .Create()) ;
         }
+
+        
     }
 }
