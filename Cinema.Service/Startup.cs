@@ -7,6 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using AutoMapper;
+using Microsoft.Extensions.Logging;
 
 namespace Cinema.Service
 {
@@ -28,11 +29,17 @@ namespace Cinema.Service
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env,ILogger<Startup> logger)
         {
+           
             if (env.IsDevelopment())
             {
+                logger.LogDebug("In Developement");
                 app.UseDeveloperExceptionPage();
+            }
+            else
+            {
+                logger.LogDebug("In Production");
             }
 
             app.UseRouting();
