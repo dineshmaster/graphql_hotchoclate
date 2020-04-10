@@ -9,6 +9,6 @@ namespace Cinema.Service.Query
     [ExtendObjectType(Name ="Query")]
      public class HelloQuery
     {
-        public string hello() => "Hello World";
+        public string hello() => "Hello World1";
     }
 }
