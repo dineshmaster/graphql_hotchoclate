@@ -1,4 +1,5 @@
 ﻿using Cinema.Service.Schema.Hello;
+using Cinema.Service.Test.Infrastructure;
 using HotChocolate;
 using HotChocolate.Execution;
 using Snapshooter.Xunit;
@@ -13,17 +14,13 @@ namespace Cinema.Service.Test
         public async Task HelloQuery_Test() 
         {
             //arrange
-            IQueryExecutor executor = SchemaBuilder.New()
-                .AddQueryType(p => p.Name("Query"))
-                .AddType<HelloQuery>()
-                .Create()
-                    .MakeExecutable();
+            IQueryExecutor queryExecutor = QueryExecutorFactory.Create<HelloQuery>();
             IReadOnlyQueryRequest request = QueryRequestBuilder.New()
                 .SetQuery("{hello}")
                 .AddProperty("key", "value")
                 .Create();
             //act
-            IExecutionResult result = await executor.ExecuteAsync(request);
+            IExecutionResult result = await queryExecutor.ExecuteAsync(request);
 
             //assert
             result.MatchSnapshot();
