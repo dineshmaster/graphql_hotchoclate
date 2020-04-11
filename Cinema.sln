@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cinema.Logic", "Cinema.Logi
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{030DCB4B-F518-47F1-AAA0-54EACA8DA35E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cinema.Service.Test", "Cinema.Service.Test\Cinema.Service.Test.csproj", "{B27C01F7-A2C6-4E55-8B47-BA4F75CED076}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cinema.Service.Test", "Cinema.Service.Test\Cinema.Service.Test.csproj", "{B27C01F7-A2C6-4E55-8B47-BA4F75CED076}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cinema.Logic.Test", "Cinema.Logic.Test\Cinema.Logic.Test.csproj", "{646E5127-ED94-48AD-BB39-0C931A8A88ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,12 +37,17 @@ Global
 		{B27C01F7-A2C6-4E55-8B47-BA4F75CED076}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B27C01F7-A2C6-4E55-8B47-BA4F75CED076}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B27C01F7-A2C6-4E55-8B47-BA4F75CED076}.Release|Any CPU.Build.0 = Release|Any CPU
+		{646E5127-ED94-48AD-BB39-0C931A8A88ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{646E5127-ED94-48AD-BB39-0C931A8A88ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{646E5127-ED94-48AD-BB39-0C931A8A88ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{646E5127-ED94-48AD-BB39-0C931A8A88ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{B27C01F7-A2C6-4E55-8B47-BA4F75CED076} = {030DCB4B-F518-47F1-AAA0-54EACA8DA35E}
+		{646E5127-ED94-48AD-BB39-0C931A8A88ED} = {030DCB4B-F518-47F1-AAA0-54EACA8DA35E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2032BCFD-3DCB-4381-A201-018F7C765FE3}

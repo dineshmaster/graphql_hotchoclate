@@ -1,5 +1,7 @@
 ﻿using Cinema.Logic.Core.Abstract;
 using Cinema.Logic.Core.Concret;
+using Cinema.Logic.Mapper.Abstract;
+using Cinema.Logic.Mapper.Concret;
 using Cinema.Model.CoreData;
 using Cinema.Model.RepositoryCore;
 using Microsoft.EntityFrameworkCore;
@@ -19,6 +21,7 @@ namespace Cinema.Service.Infrastructure.Extensions
             services.AddDbContext<CinemaDbContext>(options => options.UseSqlServer(configuration["ConnectionStrings:CinemaConnection"]));
             services.AddScoped(typeof(IUnitOfWork), typeof(UnitOfWork));
             services.AddScoped<ICinemaLogic, CinemaLogic>();
+            services.AddScoped(typeof(CinemaMapper));
         }
     }
 }

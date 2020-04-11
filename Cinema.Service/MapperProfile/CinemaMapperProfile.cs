@@ -11,7 +11,6 @@ namespace Cinema.Service.MapperProfile
     {
         public CinemaMapperProfile()
         {
-            CreateMap<Cinema.Model.Entity.Cinema, CinemaDTO>().ReverseMap();
             CreateMap<CinemaInput, CinemaDTO>();
         }
     }
