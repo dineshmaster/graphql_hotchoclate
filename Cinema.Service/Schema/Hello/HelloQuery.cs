@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Cinema.Service.Query
+namespace Cinema.Service.Schema.Hello
 {
     [ExtendObjectType(Name ="Query")]
      public class HelloQuery

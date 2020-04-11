@@ -1,12 +1,7 @@
-﻿using Cinema.Service.Query;
+﻿using Cinema.Service.Schema.Hello;
 using HotChocolate;
 using HotChocolate.Execution;
-using Microsoft.Extensions.DependencyInjection;
-using Snapshooter.Json;
 using Snapshooter.Xunit;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 

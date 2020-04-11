@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using Cinema.Logic.DTO;
-using Cinema.Service.Mutation;
+using Cinema.Service.Schema.Cinema;
 using System;
 using System.Collections.Generic;
 using System.Text;

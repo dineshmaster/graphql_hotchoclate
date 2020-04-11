@@ -1,5 +1,7 @@
-﻿using Cinema.Service.Mutation;
-using Cinema.Service.Query;
+﻿
+using Cinema.Service.Schema.Cinema;
+using Cinema.Service.Schema.Hello;
+using Cinema.Service.SChema.Cinema;
 using HotChocolate;
 using Microsoft.Extensions.DependencyInjection;
 using System;
